@@ -51,9 +51,6 @@ This Weather App is a dynamic web application that fetches weather data from the
     - Use the search functionality to look up weather information for different locations.
     - Enjoy real-time weather updates!
 
-### Contributors:
-- [Your Name]
-- [Your Email]
 
 ### Acknowledgements:
 - This application is powered by the OpenWeatherApp API.
@@ -62,5 +59,3 @@ This Weather App is a dynamic web application that fetches weather data from the
 ### Issues and Contributions:
 - If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on GitHub.
 
-### License:
-This Weather App is licensed under the [MIT License](LICENSE).
