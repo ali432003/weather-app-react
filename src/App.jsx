@@ -45,7 +45,8 @@ function App() {
         height: "100vh",
       }}>
       <div className={styles.nav}>
-        <h1 style={{ color: `${toggle ? "#000" : "#B5C0D0"}`, margin: "auto" }}>
+        <h1
+          style={{ color: `${toggle ? "#070F2B" : "#B5C0D0"}`, margin: "auto" }}>
           Weather App
         </h1>
         <button
@@ -66,7 +67,7 @@ function App() {
       </div>
       {show ? (
         <Card
-          color={toggle ? "#000" : "#B5C0D0"}
+          color={toggle ? "#070F2B" : "#B5C0D0"}
           city={weatherData.name}
           id={weatherData.id}
           temp={weatherData.main.temp}
@@ -81,7 +82,7 @@ function App() {
       ) : (
         <div
           className={styles.txt}
-          style={{ color: toggle ? "#000" : "#B5C0D0" }}>
+          style={{ color: toggle ? "#070F2B" : "#B5C0D0" }}>
           Enter a City Name
         </div>
       )}

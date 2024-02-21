@@ -52,6 +52,11 @@ const Card = (props) => {
             <img
               src={`https://openweathermap.org/img/wn/${props.icon}@2x.png`}
               className={styles.icons}
+              style={{
+                backgroundColor: props.color,
+                padding: "0.5rem",
+                borderRadius: "16rem",
+              }}
             />
           }
         </div>
