@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import moment from "moment-timezone";
 import styles from "./card.module.css";
 import { FaThermometerHalf } from "react-icons/fa";
 import clouds from "/img/cloud.png";
