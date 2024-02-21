@@ -41,7 +41,7 @@ This Weather App is a dynamic web application that fetches weather data from the
 
 4. **Run the Application:**
     ```
-    npm start
+    npm run dev
     ```
 
 5. **Access the Application:**
