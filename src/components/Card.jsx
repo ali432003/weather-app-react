@@ -35,6 +35,7 @@ const Card = (props) => {
     }
   }, [props.sunrise, props.sunset]); // run only when sunrise and sunset came
 
+  let iconUrl = `https://openweathermap.org/img/wn/${props.icon}@2x.png`;
   return (
     <div
       className={styles.cardsContainer}
@@ -53,19 +54,7 @@ const Card = (props) => {
           {/* <b>Feels Like:</b> 11 <FaThermometerHalf/> */}
         </p>
         <div className={styles.img}>
-          {props.main === "Clouds" ? (
-            <img src={clouds} className={styles.icons} />
-          ) : props.main === "Clear" ? (
-            <img src={clear} className={styles.icons} />
-          ) : props.main === "Snow" ? (
-            <img src={snow} className={styles.icons} />
-          ) : props.main === "Rain" ? (
-            <img src={rain} className={styles.icons} />
-          ) : props.main === "Smoke" ? (
-            <img src={smoke} className={styles.icons} />
-          ) : (
-            <img src={mist} className={styles.icons} />
-          )}
+          <p>{props.description}</p>{<img src={iconUrl} className={styles.icons} />}
         </div>
         <div
           style={{

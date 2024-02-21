@@ -29,7 +29,7 @@
 }
 .img{
     position: absolute;
-    margin-left:31rem;
+    margin-left:24rem;
     @media (max-width: 768px) {
         margin-left:23rem;
     }

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import night from "/img/night.jpg"; // Update image paths
-import day from "/img/day.jpg"; // Update image paths
+import night from "/img/night.jpg"; 
+import day from "/img/day.jpg"; 
 import { FaMoon } from "react-icons/fa";
-import { MdWbSunny } from "react-icons/md"; // Update import to MdWbSunny
+import { MdWbSunny } from "react-icons/md"; 
 import styles from "./App.module.css";
 import axios from "axios";
 import Card from "./components/Card.jsx";
@@ -34,7 +34,6 @@ function App() {
 
   const handleChange = (e) => {
     setCity(e.target.value); // Update 'city' state with the input value
-    
   };
 
   return (
@@ -53,7 +52,7 @@ function App() {
             borderRadius: "100%",
             height: "2rem",
             padding: "0.4rem",
-            marginTop: "auto",
+            marginTop: "1rem",
             width: "2rem",
             backgroundColor: "#B5C0D0",
             marginRight: "1rem",
@@ -72,7 +71,7 @@ function App() {
           temp={weather.main.temp}
           feel={weather.main.feels_like}
           icon={weather.weather[0].icon}
-          main={weather.weather[0].main}
+          description={weather.weather[0].description}
           country={weather.sys.country}
           sunrise={weather.sys.sunrise}
           sunset={weather.sys.sunset}
