@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./card.module.css";
 import { FaThermometerHalf } from "react-icons/fa";
-import clouds from "/img/cloud.png";
-import clear from "/img/clear.png";
-import snow from "/img/snow.png";
-import rain from "/img/rain.png";
-import mist from "/img/mist.png";
-import smoke from "/img/smoke.png";
 import sun from "/img/sun.png";
 import moon from "/img/moon.png";
 
@@ -35,7 +29,6 @@ const Card = (props) => {
     }
   }, [props.sunrise, props.sunset]); // run only when sunrise and sunset came
 
-  let iconUrl = `https://openweathermap.org/img/wn/${props.icon}@2x.png`;
   return (
     <div
       className={styles.cardsContainer}
@@ -54,7 +47,13 @@ const Card = (props) => {
           {/* <b>Feels Like:</b> 11 <FaThermometerHalf/> */}
         </p>
         <div className={styles.img}>
-          <p>{props.description}</p>{<img src={iconUrl} className={styles.icons} />}
+          <p>{props.description}</p>
+          {
+            <img
+              src={`https://openweathermap.org/img/wn/${props.icon}@2x.png`}
+              className={styles.icons}
+            />
+          }
         </div>
         <div
           style={{

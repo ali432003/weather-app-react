@@ -29,13 +29,13 @@
 }
 .img{
     position: absolute;
-    margin-left:24rem;
+    margin-left:32rem;
     @media (max-width: 768px) {
-        margin-left:23rem;
+        margin-left:20rem;
     }
 
     @media (max-width: 480px) {
-        margin-left:17rem;
+        margin-left:16rem;
     }
 }
 .icons{
