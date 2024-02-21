@@ -45,7 +45,7 @@ This Weather App is a dynamic web application that fetches weather data from the
     ```
 
 5. **Access the Application:**
-    - Once the application is running, you can access it through your web browser at `http://localhost:3000` by default.
+    - Once the application is running, you can access it through your web browser at `http://localhost:5173` by default.
 
 6. **Explore the Weather:**
     - Use the search functionality to look up weather information for different locations.
